@@ -8,12 +8,11 @@
 <body>
     <div class=content-page>
     <?php 
-        $idade = _GET["idade"];
-        
-        if ($idade > 18) {
-            echo "<span class='texto'>Parabéns você já pode votar!</span>";
+        $idade = isset($_GET["idade"])?$_GET["idade"]: "Campo não foi preenchido corretamente.";
+        if ($idade > 17) {
+            echo "<span class='texto'>Você tem $idade anos, parabéns você já pode votar!</span>";
         }else {
-            echo "<span class='texto'>Você ainda não pode votar!</span>";
+            echo "<span class='texto'>Você ainda não pode votar, tem apenas $idade anos</span>";
         }
     ?>
     </div>
