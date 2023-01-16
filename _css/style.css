@@ -5,11 +5,6 @@ body {
     background: url("wallpaper-php.jpg") no-repeat top center fixed;
     background-size: cover;
 }
-.back-button {
-    padding-left: 1170px;
-    margin-top: 20px;
-    position: absolute;
-}
 .content-page::before {
     content: "by João Victor Barbosa";
     font: 10pt Arial;
@@ -48,9 +43,11 @@ span.foco {
     color: #7e050c;
 }
 
-.botao {
+.back-button {
 	background-color: #273747;
 	color: white;
-	padding: 8px;
 	box-shadow: 2px 2px 1px #aaaaaa;
+    padding-left: 1170px;
+    margin-top: 20px;
+    position: absolute;
 }
